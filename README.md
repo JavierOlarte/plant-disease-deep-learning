@@ -142,14 +142,3 @@ The reported metrics correspond to the validation-mode experiment using 9,634 im
 Additionally, `leaf_id` grouping is based on official mapping when available and fallback identifiers for images without a mapped leaf identifier.
 
 The results should therefore be interpreted within the experimental configuration described in this repository.
-
-## Repository Structure
-
-```text
-plant-disease-deep-learning/
-├── notebooks/
-├── results/
-├── docs/
-├── requirements.txt
-├── README.md
-└── .gitignore
