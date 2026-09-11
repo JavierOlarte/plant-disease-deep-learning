@@ -40,6 +40,40 @@ Final EfficientNetB0 performance:
 
 EfficientNetB0 improved Macro-F1 by approximately 11 percentage points compared with the custom CNN baseline while reducing training time by approximately 73%.
 
+## Model Selection
+
+The models were compared before final Test evaluation using Train and Validation performance.
+
+![Model Comparison](results/model_comparison.png)
+
+EfficientNetB0 achieved the strongest Validation performance and was selected as the final model for Test evaluation.
+
+---
+
+## Training Performance
+
+Training and validation accuracy remained relatively close throughout training, showing stable learning behavior and limited overfitting.
+
+![Training Curves](results/training_curves_efficientnet.png)
+
+---
+
+## Test Confusion Matrix
+
+The normalized confusion matrix shows strong performance across most of the 15 classes, while also highlighting more challenging categories such as Tomato Early Blight, Septoria Leaf Spot and Spider Mites.
+
+![Confusion Matrix](results/confusion_matrix_efficientnet.png)
+
+---
+
+## Sample Predictions on Test Set
+
+The following examples show both correct and incorrect predictions produced by the final EfficientNetB0 model on the Test set.
+
+![Test Predictions](results/test_predictions_examples.png)
+
+These examples provide a qualitative view of model behavior and confidence beyond aggregate evaluation metrics.
+
 ## Methodology
 
 The workflow includes:
